@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.healthyquiz.MainActivity">
+
+
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name here"
+            android:imeOptions="actionSend"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Which one of the following meals is a great option for a cholesterol-conscious diet?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Macaroni cheese with ham and cauliflower."
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="onRadioButtonClicked"
+            />
+
+            <RadioButton
+                android:id="@+id/rb_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poached egg and spinach on wholegrain toast."
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="onRadioButtonClicked"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fried streaky bacon in a white bread sandwich with lettuce and tomato."
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="onRadioButtonClicked"
+                />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text=" Which of the following foods are sources of fibre? " />
+
+        <CheckBox
+            android:id="@+id/potatoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potatoes"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/pasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wholegrain pasta"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/apples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apples"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/baked_beans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baked beans"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text=" Which of the following count as “oily” fish" />
+
+        <CheckBox
+            android:id="@+id/salmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salmon"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/sardines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sardines"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/haddock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haddock"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text=" What's the heart's best fruit? " />
+
+        <EditText
+            android:id="@+id/fruit_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your answer here :) "
+            android:imeOptions="actionSend"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit to see your score!"
+            android:onClick="submitOrder"
+            android:textColor="#f50057"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
